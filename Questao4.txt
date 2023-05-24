@@ -1,0 +1,13 @@
+1. Cria uma lista de inteiros com os números 0,1,2. 
+
+2. Verifica se a string "documento" começa com "0", se sim, usa o método substring para eliminar o caractere "O" da String, 
+pois atribui toda a string a partir do índice 1. É importante notar que existe redundância na condição "documento.startsWith("0")", 
+mais especificamente na sua segunda ocorrência, já que ela está dentro dela mesma. Além disso, o loop encontrado no código
+é desnecessário, pois a condição é checada apenas uma vez.  
+
+3. O código cria um arquivo de texto com o conteúdo fornecido na variável "txtDados", usando o método "append" e utilizando a classe StringBuilder e a classe FileWriter.
+
+4. O código define uma string contendo uma data no formato "dd/MM/yyyy" e verifica se o tamanho dessa string é maior do que 9, para certificar o uso correto do formato.
+Em seguida, são criada duas variáveis para extrairem o mês e ano em da data fornecida e convert para um inteiro.No entanto, não é necessário subtrair 1 de mesRef. Logo
+em seguida existe uma condição para checar se mesRef é igual a 0, para em caso de erro de digitação, o mes ser trocado para Dezembro e subtrair 1 do anoRef.
+Por último, a variável mesAnoX utiliza StringUtil para formatar os valores para ficarem no formato desejado, colocando zeros a esquerda e barra("/").
